@@ -29,7 +29,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/battery-status-progressive-web-app/",
   "orientation": "portrait",
   "display": "standalone",
   "background_color": "#448AFF",
