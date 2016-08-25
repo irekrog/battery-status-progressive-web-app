@@ -1,83 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Battery Status - Progressive Web App</title>
-  <link rel="manifest" href="./manifest.json">
-	<link rel="stylesheet" href="./styles/material.min.css">
-	<link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Status - Progressive Web App</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./styles/material.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
 
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
             mdl-layout--fixed-tabs">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Current battery level</span>
-    </div>
-    <!-- Tabs -->
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Current level</a>
-      <a href="#fixed-tab-2" class="mdl-layout__tab">More info</a>
-    </div>
-  </header>
-   <div class="mdl-layout__drawer">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Current battery level</span>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Current level</a>
+            <a href="#fixed-tab-2" class="mdl-layout__tab">More info</a>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">twitter: 
     <a href="https://twitter.com/irekrog" target="_blank">@irekrog</a></span>
-  </div>
-  <main class="mdl-layout__content">
-    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
-      <div class="page-content">
-		    <div class="battery-content">
-    			<p class="battery-level mdl-spinner mdl-js-spinner is-active"></p>
-    			<div class="battery-fill"></div>
-    			<img id="battery-img" src="./images/battery.png" alt="Battery">
-		    </div>
-      </div>
-    </section>
-    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
-      <div class="page-content">
-      	<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
-        <thead>
-          <tr>
-            <th class="mdl-data-table__cell--non-numeric">Info</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Current level</td>
-            <td class="table__cell--current-level"></td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">State</td>
-            <td class="table__cell--charge-state"></td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Time to charge</td>
-            <td class="table__cell--time-to-charge"></td>
-          </tr>
-          <tr>
-            <td class="mdl-data-table__cell--non-numeric">Time to discharge</td>
-            <td class="table__cell--time-to-discharge"></td>
-          </tr>
-        </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-  <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
-  <div class="mdl-snackbar__text"></div>
-  <button class="mdl-snackbar__action" type="button"></button>
-</div>
+    </div>
+    <main class="mdl-layout__content">
+        <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+            <div class="page-content">
+                <div class="battery-content">
+                    <p class="battery-level mdl-spinner mdl-js-spinner is-active"></p>
+                    <div class="battery-fill"></div>
+                    <img id="battery-img" src="./images/battery.png" alt="Battery">
+                </div>
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+            <div class="page-content">
+                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                    <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Info</th>
+                        <th>Value</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Current level</td>
+                        <td class="table__cell--current-level"></td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">State</td>
+                        <td class="table__cell--charge-state"></td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Time to charge</td>
+                        <td class="table__cell--time-to-charge"></td>
+                    </tr>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">Time to discharge</td>
+                        <td class="table__cell--time-to-discharge"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action" type="button"></button>
+    </div>
 </div>
 
 <script src="./scripts/material.min.js"></script>
 <script src="./scripts/script.js"></script>
-	
+
 </body>
 </html>

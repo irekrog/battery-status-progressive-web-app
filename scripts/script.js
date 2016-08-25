@@ -25,11 +25,11 @@
 				}, false);
 
 				 battery.addEventListener("chargingtimechange", () => {
-				 	Battery.chargingTimeChange(battery);
+					Battery.chargingTimeChange(battery);
 				 }, false);
 
 				 battery.addEventListener("dischargingtimechange", () => {
-				 	Battery.dischargingTimeChange(battery);
+					Battery.dischargingTimeChange(battery);
 				 }, false);
 
 			});
@@ -106,7 +106,7 @@
   				}).catch(function(err) {
     				console.log('ServiceWorker registration failed: ', err);
   				});
-			};
+			}
 
 			Battery.getInfo();
 
