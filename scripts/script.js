@@ -109,7 +109,6 @@
 					console.log('ServiceWorker registration failed: ', err);
 				});
 			}
-			
 			this.getInfo();
 		}
 	};
