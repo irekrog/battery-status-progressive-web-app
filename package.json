@@ -1,0 +1,20 @@
+{
+  "name": "battery-status-progressive-web-app",
+  "version": "1.0.0",
+  "description": "Progressive Web App",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irekrog/battery-status-progressive-web-app.git"
+  },
+  "keywords": [
+    "progressive",
+    "web",
+    "app"
+  ],
+  "author": "Irek Rog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irekrog/battery-status-progressive-web-app/issues"
+  },
+  "homepage": "https://github.com/irekrog/battery-status-progressive-web-app#readme"
+}
