@@ -55,7 +55,7 @@
 			let snackbarContainer = document.querySelector('#demo-toast-example');
 			let data = {message: b.charging ? 'Charging...' : 'Not charging'};
 
-			snackbarContainer.MaterialSnackbar.showSnackbar(data);
+			if (typeof snackbarContainer.MaterialSnackbar !== 'undefined') snackbarContainer.MaterialSnackbar.showSnackbar(data);
 
 			tableChargeState.textContent = b.charging ? 'Charging...' : 'Not charging';
 
