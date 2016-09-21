@@ -10,7 +10,7 @@
 
 			navigator.getBattery().then(battery => {
 
-				const c = Battery.currentLevel(battery);
+				let c = Battery.currentLevel(battery);
 
 				Battery.batteryStateRender(c);
 				Battery.isCharging(battery);
@@ -18,7 +18,7 @@
 				Battery.dischargingTimeChange(battery);
 
 				battery.addEventListener('levelchange', () => {
-					const c = Battery.currentLevel(battery);
+					let c = Battery.currentLevel(battery);
 					Battery.batteryStateRender(c);
 				}, false);
 
@@ -39,21 +39,21 @@
 		},
 
 		currentLevel(b) {
-			const level = document.querySelector('.battery-level');
-			const tableCurrentLevel = document.querySelector('.table__cell--current-level');
+			let levelText = document.querySelector('.battery-level');
+			let tableCurrentLevel = document.querySelector('.table__cell--current-level');
 
-			level.textContent = ((b.level * 100).toFixed()) + '%';
+			levelText.textContent = ((b.level * 100).toFixed()) + '%';
 			tableCurrentLevel.textContent = ((b.level * 100).toFixed()) + '%';
 
-			level.classList.remove('mdl-spinner', 'mdl-js-spinner', 'is-active');
+			levelText.classList.remove('mdl-spinner', 'mdl-js-spinner', 'is-active');
 
 			return b.level * 100;
 		},
 
 		isCharging(b) {
-			const tableChargeState = document.querySelector('.table__cell--charge-state');
-			const snackbarContainer = document.querySelector('#demo-toast-example');
-			const data = {message: b.charging ? 'Charging...' : 'Not charging'};
+			let tableChargeState = document.querySelector('.table__cell--charge-state');
+			let snackbarContainer = document.querySelector('#demo-toast-example');
+			let data = {message: b.charging ? 'Charging...' : 'Not charging'};
 
 			snackbarContainer.MaterialSnackbar.showSnackbar(data);
 
@@ -63,12 +63,12 @@
 		},
 
 		chargingTimeChange(b) {
-			const chargeTime = document.querySelector('.table__cell--time-to-charge');
+			let chargeTime = document.querySelector('.table__cell--time-to-charge');
 			chargeTime.textContent = b.chargingTime;
 		},
 
 		dischargingTimeChange(b) {
-			const chargeTime = document.querySelector('.table__cell--time-to-discharge');
+			let chargeTime = document.querySelector('.table__cell--time-to-discharge');
 			chargeTime.textContent = b.dischargingTime;
 		},
 
@@ -83,9 +83,9 @@
 			const deepOrange = '#FF5722';
 			const red = '#FF5722';
 
-			const batteryFill = document.querySelector('.battery-fill');
-			const level = document.querySelector('.battery-level');
-			const currentRenderLevel = (maxHeight * b) / 100;
+			let batteryFill = document.querySelector('.battery-fill');
+			let level = document.querySelector('.battery-level');
+			let currentRenderLevel = (maxHeight * b) / 100;
 			batteryFill.style.height = currentRenderLevel + 'px';
 
 			if (currentRenderLevel < 165) level.style.color = '#5E5E5E';

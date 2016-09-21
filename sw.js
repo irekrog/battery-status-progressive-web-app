@@ -2,7 +2,7 @@
 
 const CACHE_NAME = 'v1:cache';
 
-const toCache = [
+let toCache = [
 	'./',
 	'./styles/material.min.css',
 	'./styles/main.css',

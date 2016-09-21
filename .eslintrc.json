@@ -25,7 +25,7 @@
             "always"
         ],
         "prefer-arrow-callback": 2,
-    		"prefer-const": 2,
+    		"prefer-const": 1,
     		"no-var": 2,
     		"object-shorthand": 2
     }
