@@ -1,7 +1,7 @@
 {
   "name": "Battery Status Progressive Web App",
   "short_name": "Battery PWA",
-  "description": "A simply app Battery Status Progreesive Wep App",
+  "description": "Battery Status Progressive Wep App",
   "icons": [
     {
       "src": "images/icons/icon-48x48.png",

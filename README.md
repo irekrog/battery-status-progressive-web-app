@@ -6,7 +6,7 @@ https://irekrog.github.io/battery-status-progressive-web-app/
 
 # Battery Status Progressive Web App
 
-Simply Progressive Web App which show info about device's battery e.g. current battery level.
+Simple Progressive Web App which show info about device's battery e.g. current battery level.
 
 # What is Progressive Web App
 
