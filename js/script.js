@@ -26,19 +26,19 @@ class BatteryStatusPWA {
       battery.addEventListener('levelchange', () => {
         const c = this.currentLevel(battery);
         this.batteryStateRender(c);
-      }, false);
+      });
 
       battery.addEventListener('chargingchange', () => {
         this.isCharging(battery);
-      }, false);
+      });
 
       battery.addEventListener('chargingtimechange', () => {
         this.chargingTimeChange(battery);
-      }, false);
+      });
 
       battery.addEventListener('dischargingtimechange', () => {
         this.dischargingTimeChange(battery);
-      }, false);
+      });
 
     });
   }
