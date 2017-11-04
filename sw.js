@@ -1,13 +1,13 @@
 /* eslint no-console: 0 */
 
-const CACHE_NAME = 'v1:cache';
+const CACHE_NAME = 'v2:cache';
 
 let toCache = [
   './',
-  './styles/material.min.css',
-  './styles/main.css',
-  './scripts/material.min.js',
-  './scripts/script.js',
+  './css/material.min.css',
+  './css/main.css',
+  './js/material.min.js',
+  './js/script.js',
   './images/battery.png',
   './manifest.json',
   'https://fonts.googleapis.com/icon?family=Material+Icons'

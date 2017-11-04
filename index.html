@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#303F9F">
   <title>Battery Status - Progressive Web App</title>
-  <link rel="manifest" href="./manifest.json">
-  <link rel="stylesheet" href="./styles/material.min.css">
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/material.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
@@ -29,22 +29,22 @@
     <a href="https://twitter.com/irekrog" target="_blank" rel="noopener">@irekrog</a></span>
   </div>
   <main class="mdl-layout__content">
-    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+    <div class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
       <div class="page-content">
         <div class="battery-content">
           <p class="battery-level mdl-spinner mdl-js-spinner is-active"></p>
           <div class="battery-fill"></div>
-          <img id="battery-img" src="./images/battery.png" alt="Battery">
+          <img id="battery-img" src="images/battery.png" alt="Battery">
         </div>
       </div>
-    </section>
-    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+    </div>
+    <div class="mdl-layout__tab-panel" id="fixed-tab-2">
       <div class="page-content">
         <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
           <thead>
           <tr>
-            <th class="mdl-data-table__cell--non-numeric">Info</th>
-            <th>Value</th>
+            <th class="mdl-data-table__cell--non-numeric" scope="col">Info</th>
+            <th scope="col">Value</th>
           </tr>
           </thead>
           <tbody>
@@ -67,7 +67,7 @@
           </tbody>
         </table>
       </div>
-    </section>
+    </div>
   </main>
   <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
     <div class="mdl-snackbar__text"></div>
@@ -75,8 +75,7 @@
   </div>
 </div>
 
-<script src="./scripts/material.min.js"></script>
-<script src="./scripts/script.js"></script>
-
+<script src="js/material.min.js"></script>
+<script src="js/script2.js"></script>
 </body>
 </html>
